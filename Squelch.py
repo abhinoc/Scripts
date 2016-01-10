@@ -29,6 +29,6 @@ def Squelch(url):
 url = []
 ## BUILDING URL
 for i in range (1,3):
-    A = "https://zenoss.com/zport/dmd/Devices/Server/Linux/g2p/poll/devices/host%s.com/manage_editDevice?productionState=300" %(i)
+    A = "https://zenoss.com/zport/dmd/Devices/Server/Linux/xxxx/poll/devices/host%s.com/manage_editDevice?productionState=300" %(i)
     url.extend([A])
 
