@@ -32,9 +32,9 @@ fob.close()
 diff=(inr_rate - p_value)
 
 # Email Logic
-if diff != '0.0':
+if diff != 0.0:
     m = MIMEMultipart()
-    m['Subject'] = 'Fluctuation:- Current INR rate : %s'%(inr_rate)
+    m['Subject'] = 'Fluctuation:- Current INR rate : %s, Previous Rate was %s' %(inr_rate,p_value)
     m['From'] = 'updates-100'
     m['To'] = 'xxxx@gmail.com'
     s = smtplib.SMTP('localhost')
