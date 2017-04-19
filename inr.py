@@ -7,7 +7,6 @@
 import json
 import urllib2
 import smtplib
-from email.mime.text import MIMEText as text
 from email.mime.multipart import MIMEMultipart
 
 # Store Old data
