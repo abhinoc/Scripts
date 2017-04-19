@@ -37,7 +37,6 @@ if diff != '0.0':
     m['Subject'] = 'Fluctuation:- Current INR rate : %s'%(inr_rate)
     m['From'] = 'updates-100'
     m['To'] = 'xxxx@gmail.com'
-    Subject = 'INR Current Rate %s %(inr_rate)'
     s = smtplib.SMTP('localhost')
     s.sendmail('xxxxx@gmail.com', 'xxxx@gmail.com',  m.as_string())
     s.quit
