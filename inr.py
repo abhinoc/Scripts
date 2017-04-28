@@ -23,7 +23,7 @@ class LoadJson:
         data = json.load(urllib2.urlopen(envurl))
 
 obj = LoadJson('%s' %(url))
-inr_rate = data['rates']['inr']
+inr_rate = data['rates']['INR']
 inr_rate = round(inr_rate,5)
 fob=open("current-data.txt",'w')
 fob.write('%s' %(inr_rate))
