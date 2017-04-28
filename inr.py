@@ -16,14 +16,14 @@ f_r.close()
 p_value = float(p_value)
 p_value = round(p_value,5)
 
-url = 'http://www.floatrates.com/daily/eur.json'
+url = 'http://api.fixer.io/latest?base=EUR'
 class LoadJson:
     def __init__(self, envurl):
         global data
         data = json.load(urllib2.urlopen(envurl))
 
 obj = LoadJson('%s' %(url))
-inr_rate = data['inr']['rate']
+inr_rate = data['rates']['inr']
 inr_rate = round(inr_rate,5)
 fob=open("current-data.txt",'w')
 fob.write('%s' %(inr_rate))
